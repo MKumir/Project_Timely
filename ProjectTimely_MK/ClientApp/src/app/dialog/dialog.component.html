@@ -1,0 +1,13 @@
+<div>
+    <div class="headingModalDiv">
+        <label class="lblNaslov">Stop Timer</label>
+        <button class="btnCloseModal" (click)="closeDialog()">X</button>
+    </div>
+    <div class="nameProjectModalDiv">
+        <label>Project name *</label>
+        <input [(ngModel)]="projectName" class="nameProjectInput"/>
+    </div>
+    <div class="stopTimerDiv">
+        <button class="btnStopTimer" (click)="stopTimer()">Stop timer</button>
+    </div>
+</div>
