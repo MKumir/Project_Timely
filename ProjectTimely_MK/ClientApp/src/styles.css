@@ -46,13 +46,17 @@ code {
 th {
   text-align: center;
   font-weight: normal;
+  border-style: ridge;
+  border-width: 2px 2px 0px 2px;
 }
 
 td {
   text-align: center;
+  border-style: ridge;
+  border-width: 2px 2px 0px 2px;
 }
 
-.btnStopTimer {
+.bigBtn {
   display: inline-block;
   background: white;
   border-radius: 15px;
@@ -130,6 +134,7 @@ td {
 
 .table-striped {
   margin-top: 30px;
+  border: 2px ridge;
 }
 
 .btnCloseModal {
@@ -152,7 +157,34 @@ td {
   margin-left: auto;
 }
 
+.optionsCell {
+  width: 20%;
+}
 
+.btnEdit {
+  display: inline-block;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  height: 35px;
+  width: 90px;
+}
 
-
+.btnDelete {
+  display: inline-block;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  height: 35px;
+  width: 90px;
+  margin-left: 20px;
+}
 

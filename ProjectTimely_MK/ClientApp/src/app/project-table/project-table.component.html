@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead>
+        <tr class="red">
+            <th>Project</th>
+            <th>Start</th>
+            <th>Stop</th>
+            <th>Duration</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let projectItem of ProjectList">
+            <td>{{projectItem.ProjectName}}</td>
+            <td>{{projectItem.StartDate}}</td>
+            <td>{{projectItem.StopDate}}</td>
+            <td>{{projectItem.Duration}}</td>
+            <td class="optionsCell">
+                <button *ngIf="projectItem.StopDate!=''" class="btnEdit" (click)="openEditDialog(projectItem)">
+                    Edit
+                </button>
+                <button class="btnDelete" (click)="removeProject(projectItem)">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
